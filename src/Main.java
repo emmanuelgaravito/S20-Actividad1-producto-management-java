@@ -44,12 +44,11 @@ public class Main {
         nombre = leer.next();
         System.out.println("Introduce la categoria del producto: ");
         categorias();
-        //categoria = leer.next();
         System.out.println("Introduce la cantidad: ");
         cantidad = leer.nextInt();
         System.out.println("Introduce el tamaño del producto: ");
         tamannos();
-        //tamanno = leer.next();
+
 
         Producto producto = null;
         switch (categoria) {
@@ -122,7 +121,6 @@ public class Main {
             System.out.println("Categoría: " + p.getCategoria());
             System.out.println("Cantidad: " + p.getCantidad());
             System.out.println("Tamaño: " + p.getTamanno());
-            // Now you can call the method directly - polymorphism!
             System.out.println("Costo de envío: $" + p.costoDeEnvio());
             System.out.println("------------------------");
         }

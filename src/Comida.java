@@ -4,9 +4,7 @@ public class Comida extends Producto {
     }
     @Override
     public int costoDeEnvio() {
-         if(tamanno == "Grande" & cantidad > 2){
-             return 0;
-         }
+         if(tamanno.equals("Grande") && cantidad > 2) return 0;
          return 70000;
     }
 }
